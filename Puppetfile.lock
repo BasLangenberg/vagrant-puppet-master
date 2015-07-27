@@ -26,6 +26,7 @@ FORGE
 
 DEPENDENCIES
   Ginja-puppet_stack (>= 0)
+  maestrodev-rvm (~> 1.5.0)
   puppetlabs-apache (~> 1.0)
   puppetlabs-concat (~> 1.0)
   puppetlabs-postgresql (~> 3.0)
