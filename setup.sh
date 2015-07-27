@@ -13,7 +13,7 @@ rvm install ruby-2.0.0
 rvm alias create default ruby-2.0.0
 
 # Install puppet and librarian-puppet
-gem install puppet
+gem install puppet -v 3.8.1
 gem install librarian-puppet
 
 # Install necessary Puppet modules
