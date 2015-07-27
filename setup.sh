@@ -13,8 +13,8 @@ rvm install ruby-2.0.0
 rvm alias create default ruby-2.0.0
 
 # Install puppet and librarian-puppet
-gem install puppet -v 3.8.1
-gem install librarian-puppet
+gem install puppet -v 3.8.1 --no-ri --no-rdoc
+gem install librarian-puppet --no-ri --no-rdoc
 
 # Install necessary Puppet modules
 if [ -d "/vagrant/modules" ]; then
