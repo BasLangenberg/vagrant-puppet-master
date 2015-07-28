@@ -7,8 +7,6 @@ FORGE
       puppetlabs-concat (~> 1.0)
       puppetlabs-postgresql (~> 3.0)
       puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
-    maestrodev-rvm (1.5.9)
-      puppetlabs-stdlib (>= 3.2.0)
     puppetlabs-apache (1.5.0)
       puppetlabs-concat (< 2.0.0, >= 1.1.1)
       puppetlabs-stdlib (< 5.0.0, >= 2.4.0)
@@ -24,9 +22,18 @@ FORGE
       puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
     puppetlabs-stdlib (4.7.0)
 
+GIT
+  remote: https://github.com/maestrodev/puppet-rvm.git
+  ref: v1.5.0
+  sha: 93c0544f5b501a8f157fb6c0c985df16ef67689a
+  specs:
+    maestrodev-rvm (1.5.0)
+      puppetlabs-apache (>= 0.9.0)
+      puppetlabs-stdlib (>= 3.2.0)
+
 DEPENDENCIES
   Ginja-puppet_stack (>= 0)
-  maestrodev-rvm (~> 1.5.0)
+  maestrodev-rvm (>= 0)
   puppetlabs-apache (~> 1.0)
   puppetlabs-concat (~> 1.0)
   puppetlabs-postgresql (~> 3.0)
