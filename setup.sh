@@ -24,7 +24,8 @@ if [ ! -f "/vagrant/shell_provisioned" ]; then
     exit 1
   fi
 
-  librarian-puppet install --path /vagrant
+  cd /vagrant
+  librarian-puppet install
 
   touch /vagrant/shell_provisioned
 

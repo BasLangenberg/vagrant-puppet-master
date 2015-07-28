@@ -2,3 +2,4 @@
 .tmp/
 modules/
 .librarian/
+shell_provisioned
