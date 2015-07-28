@@ -10,4 +10,6 @@ mod 'maestrodev/rvm',
   :git => 'https://github.com/maestrodev/puppet-rvm.git',
   :ref => 'v1.5.0'
 mod 'puppetlabs/stdlib', '>=3.2.0 <5.0.0'
-mod 'Ginja/puppet_stack'
+mod 'Ginja/puppet_stack',
+  :git => 'https://github.com/BasLangenberg/puppet_stack.git',
+  :ref => 'feature/puppet38'

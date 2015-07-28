@@ -1,12 +1,6 @@
 FORGE
   remote: https://forgeapi.puppetlabs.com
   specs:
-    Ginja-puppet_stack (1.1.1)
-      maestrodev-rvm (~> 1.5.0)
-      puppetlabs-apache (~> 1.0)
-      puppetlabs-concat (~> 1.0)
-      puppetlabs-postgresql (~> 3.0)
-      puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
     puppetlabs-apache (1.5.0)
       puppetlabs-concat (< 2.0.0, >= 1.1.1)
       puppetlabs-stdlib (< 5.0.0, >= 2.4.0)
@@ -21,6 +15,18 @@ FORGE
       puppetlabs-firewall (>= 0.0.4)
       puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
     puppetlabs-stdlib (4.7.0)
+
+GIT
+  remote: https://github.com/BasLangenberg/puppet_stack.git
+  ref: feature/puppet38
+  sha: a939d6c92e21a881df47016363de58a6976326c1
+  specs:
+    Ginja-puppet_stack (1.1.1)
+      maestrodev-rvm (~> 1.5.0)
+      puppetlabs-apache (~> 1.0)
+      puppetlabs-concat (~> 1.0)
+      puppetlabs-postgresql (~> 3.0)
+      puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
 
 GIT
   remote: https://github.com/maestrodev/puppet-rvm.git
