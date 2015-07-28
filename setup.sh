@@ -8,9 +8,10 @@ if [ ! -f "/vagrant/shell_provisioned" ]; then
   usermod -G rvm vagrant
   source /etc/profile.d/rvm.sh
 
-  # Install Ruby
+  # Install Ruby and Bundler
   rvm install ruby-2.0.0
   rvm alias create default ruby-2.0.0
+  gem install bundler --no-ri --no-rdoc
 
   # Install puppet and librarian-puppet
   gem install puppet -v 3.8.1 --no-ri --no-rdoc
