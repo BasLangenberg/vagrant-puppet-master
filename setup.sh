@@ -18,7 +18,7 @@ if [ ! -f "/vagrant/shell_provisioned" ]; then
   gem install librarian-puppet --no-ri --no-rdoc
 
   # Install necessary Puppet modules
-  if [ -d "/vagrant/modules" ]; then
+  if [ -d "/vagrant/modules/stdlib" ]; then
     echo 'script ran with /vagrant/module directory existing'
     echo 'please remove it manually from the vagrant directory'
     echo 'exit with error'
