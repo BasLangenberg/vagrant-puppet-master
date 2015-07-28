@@ -18,10 +18,11 @@ gem install librarian-puppet --no-ri --no-rdoc
 
 # Install necessary Puppet modules
 if [ -d "/vagrant/modules" ]; then
-  rm -rf /vagrant/modules
+  echo 'module dir exists, please remove it manually from the vagrant directory'
+  echo 'exit with error'
+  exit 1
 fi
 
-cd /vagrant
-librarian-puppet install
+librarian-puppet install --path /vagrant
 
 exit 0
